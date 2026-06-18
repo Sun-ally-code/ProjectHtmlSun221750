@@ -2,13 +2,25 @@
 
 The assignment project given on 15th June 2026
 
-echo "# Coffee Heaven Website" > README.md
-echo "A complete multi-page website for a coffee shop." >> README.md
-echo "" >> README.md
-echo "## Pages" >> README.md
-echo "- Home" >> README.md
-echo "- About" >> README.md
-echo "- Contact" >> README.md
-echo "- CSS" >> README.md
-echo "- Bootstrap 5" >> README.md
-echo "- JavaScript" >> README.md
+# Coffee Heaven Website
+
+A complete multi-page website for a coffee shop.
+
+## The Pages
+
+- Home (index.html)
+- About (about.html)
+- Contact (contacts.html)
+
+## The Features
+
+- Responsive design with Bootstrap 5
+- Contact form with JavaScript validation
+- Professional coffee shop theme
+
+## Technologies Used
+
+- HTML5
+- CSS3
+- Bootstrap 5
+- JavaScript
