@@ -1,13 +1,14 @@
-// waiting for page to load fully
+// Waiting for the page to fully load
 document.addEventListener('DOMContentLoaded', function() {
     
     console.log('Coffee Heaven website loaded successfully');
     console.log('☕ Welcome to Coffee Heaven!');
     
-    //dark mode
+    // dark mode
     const toggleButton = document.getElementById('darkModeToggle');
     const body = document.body;
     
+    // Checking if the user has a saved preference
     if (localStorage.getItem('darkMode') === 'enabled') {
         body.classList.add('dark-mode');
         toggleButton.textContent = '☀️ Light';
