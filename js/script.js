@@ -1,7 +1,28 @@
+// waiting for page to load fully
 document.addEventListener('DOMContentLoaded', function() {
     
-    console.log('Bean Haven Café website loaded successfully');
+    console.log('Coffee Heaven website loaded successfully');
+    console.log('☕ Welcome to Coffee Heaven!');
     
-    console.log('Welcome to Bean Haven Café!');
+    //dark mode
+    const toggleButton = document.getElementById('darkModeToggle');
+    const body = document.body;
+    
+    if (localStorage.getItem('darkMode') === 'enabled') {
+        body.classList.add('dark-mode');
+        toggleButton.textContent = '☀️ Light';
+    }
+    
+    toggleButton.addEventListener('click', function() {
+        body.classList.toggle('dark-mode');
+        
+        if (body.classList.contains('dark-mode')) {
+            toggleButton.textContent = '☀️ Light';
+            localStorage.setItem('darkMode', 'enabled');
+        } else {
+            toggleButton.textContent = '🌙 Dark';
+            localStorage.setItem('darkMode', 'disabled');
+        }
+    });
     
 });
