@@ -109,4 +109,109 @@ img.rounded {
 footer {
     margin-top: 0;
 }
-  
+
+/* Page title headings */
+.page-title {
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    position: relative;
+    display: inline-block;
+}
+
+.page-title:after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 4px;
+    background: #e6a756;
+    border-radius: 2px;
+}
+
+/* Section headings */
+.section-heading {
+    font-weight: 600;
+    letter-spacing: -0.3px;
+    color: #2d2d2d;
+}
+
+/* Lead text */
+.lead-text {
+    font-size: 1.2rem;
+    color: #6c757d;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Badge container */
+.heading-badges {
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+}
+
+.heading-badges .badge {
+    font-size: 0.85rem;
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-weight: 500;
+    background-color: #2d2d2d;
+    color: #fff;
+}
+
+/* Hero headings */
+.hero-title {
+    font-size: 4rem;
+    font-weight: 800;
+    letter-spacing: -1px;
+    text-shadow: 0 4px 20px rgba(0,0,0,0.3);
+}
+
+.hero-subtitle {
+    font-size: 1.5rem;
+    font-weight: 300;
+    opacity: 0.95;
+}
+
+/* Dark mode heading fixes */
+body.dark-mode .section-heading {
+    color: #e0e0e0;
+}
+
+body.dark-mode .lead-text {
+    color: #aaa;
+}
+
+body.dark-mode .page-title:after {
+    background: #e6a756;
+}
+
+body.dark-mode .heading-badges .badge {
+    background-color: #16213e;
+    color: #e0e0e0;
+    border: 1px solid #333;
+}
+
+/* Responsive heading sizes */
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 2.5rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.1rem;
+    }
+    
+    .page-title {
+        font-size: 2.2rem;
+    }
+    
+    .section-heading {
+        font-size: 1.6rem;
+    }
+}
