@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coffee Heaven - Contact</title>
     
-    <!-- Bootstrap CSS -->
+     
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     
@@ -30,7 +30,7 @@
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
 
-        /* Dark Mode Styles for this page */
+        
         body.dark-mode {
             background-color: #1a1a2e !important;
             color: #e0e0e0 !important;
@@ -108,7 +108,7 @@
 </head>
 <body>
 
-    <!-- Navigation -->
+    
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
         <div class="container">
             <a class="navbar-brand fw-bold" href="index.html">☕ Coffee Heaven</a>
@@ -132,7 +132,8 @@
         </div>
     </nav>
 
-    <!-- Contact Section -->
+
+
     <section class="container my-5">
         <div class="row">
             <div class="col-lg-6">
@@ -201,18 +202,17 @@
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="bg-dark text-white py-4 mt-5">
-        <div class="container text-center">
-            <p>&copy; <span id="currentYear"></span> Coffee Heaven. All rights reserved.</p>
+    <footer class="bg-dark text-white text-center py-4">
+        <div class="container">
+            <p class="mb-2">📍 Lavington, Nairobi | 📞 <a href="tel:+254722867537" class="text-white text-decoration-none">(+254) 722 867 537</a> | ✉️ <a href="mailto:coffeeheaven@gmail.com" class="text-white text-decoration-none">coffeeheaven@gmail.com</a></p>
+            <p class="mb-0 small">© 2026 Coffee Heaven – All rights reserved</p>
         </div>
     </footer>
-
-    <!-- Bootstrap JS -->
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/script.js"></script>
     
-    <!-- Form Validation Script -->
+    
     <script>
         function validateForm() {
             var name = document.getElementById('name').value;
@@ -222,35 +222,35 @@
             var agree = document.getElementById('agree').checked;
             var messageDiv = document.getElementById('formMessage');
             
-            // Clear previous messages
+            //clear former messages 
             messageDiv.style.display = 'none';
             messageDiv.className = '';
             
-            // Validate Name
+            //validate  name 
             if (name.trim().length < 2) {
                 showMessage('⚠️ Please enter your full name (minimum 2 characters).', 'danger');
                 return false;
             }
             
-            // Validate Email
+            // validate Email
             if (!email.includes('@') || !email.includes('.')) {
                 showMessage('⚠️ Please enter a valid email address.', 'danger');
                 return false;
             }
             
-            // Validate Subject
+            // validate Subject
             if (subject === '') {
                 showMessage('⚠️ Please select a subject.', 'danger');
                 return false;
             }
             
-            // Validate Message
+            // validate Message
             if (message.trim().length < 10) {
                 showMessage('⚠️ Please enter a message with at least 10 characters.', 'danger');
                 return false;
             }
             
-            // Validate Terms
+            // validate the Terms
             if (!agree) {
                 showMessage('⚠️ Please agree to the terms and conditions.', 'danger');
                 return false;
@@ -268,13 +268,13 @@
             messageDiv.textContent = text;
             messageDiv.style.display = 'block';
             
-            // Auto-hide after 5 seconds
+            // autohide after 5 seconds
             setTimeout(function() {
                 messageDiv.style.display = 'none';
             }, 5000);
         }
 
-        // Auto-update footer year
+        // auto update footer year
         document.addEventListener('DOMContentLoaded', function() {
             var yearSpan = document.getElementById('currentYear');
             if (yearSpan) {
@@ -282,5 +282,6 @@
             }
         });
     </script>
+    
 </body>
 </html>
