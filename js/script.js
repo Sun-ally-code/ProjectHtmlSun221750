@@ -1,4 +1,4 @@
-// Coffee Heaven - Interactive Features
+// Coffee Heaven 
 
 // Wait for the page to fully load
 document.addEventListener('DOMContentLoaded', function() {
@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
     console.log('Coffee Heaven website loaded successfully');
     console.log('☕ Welcome to Coffee Heaven!');
     
-    // ----- DARK MODE FEATURE -----
+    // dark mode feature
     const toggleButton = document.getElementById('darkModeToggle');
     const body = document.body;
     
@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
-    // ----- BACK TO TOP BUTTON -----
+    // back to top button 
     const backToTopBtn = document.getElementById('backToTop');
     
     if (backToTopBtn) {
