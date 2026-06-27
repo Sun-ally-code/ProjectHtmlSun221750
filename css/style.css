@@ -248,3 +248,36 @@ body.dark-mode #backToTop {
 body.dark-mode #backToTop:hover {
     background-color: #1a4a7a;
 }
+/* dark mode for FAQ */
+body.dark-mode .accordion-item {
+    background-color: #1a1a2e !important;
+    border-color: #333 !important;
+}
+
+body.dark-mode .accordion-header {
+    background-color: #1a1a2e !important;
+}
+
+body.dark-mode .accordion-button {
+    background-color: #16213e !important;
+    color: #e0e0e0 !important;
+    border-color: #333 !important;
+}
+
+body.dark-mode .accordion-button:not(.collapsed) {
+    background-color: #0f3460 !important;
+    color: #e0e0e0 !important;
+}
+
+body.dark-mode .accordion-button:focus {
+    box-shadow: none !important;
+}
+
+body.dark-mode .accordion-body {
+    background-color: #1a1a2e !important;
+    color: #ccc !important;
+}
+
+body.dark-mode .accordion-button::after {
+    filter: invert(1) !important;
+}
