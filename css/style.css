@@ -1,23 +1,30 @@
-/* Smooth Scrolling */
+/* Smooth scrolling for better user experience */
 html {
     scroll-behavior: smooth;
 }
+
+/* Main body font */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+/* Hero section styling */
 .hero-section {
     margin-bottom: 0;
 }
 
+/* Card hover effect, subtle lift on hover */
 .card {
     transition: transform 0.3s ease;
+    border-radius: 12px !important;
+    overflow: hidden;
 }
 
 .card:hover {
     transform: translateY(-5px);
 }
 
+/* Footer link styling */
 footer a {
     color: #ffc107;
     text-decoration: none;
@@ -27,6 +34,7 @@ footer a:hover {
     text-decoration: underline;
 }
 
+/* Mobile responsiveness adjustments */
 @media (max-width: 768px) {
     .display-3 {
         font-size: 2.5rem;
@@ -36,7 +44,8 @@ footer a:hover {
         min-height: 400px;
     }
 }
-/*for dark mode */
+
+/* dark mode */
 body.dark-mode {
     background-color: #1a1a2e;
     color: #e0e0e0;
@@ -52,17 +61,6 @@ body.dark-mode .card {
     border-color: #333;
 }
 
-body.dark-mode .form-control {
-    background-color: #16213e;
-    color: #e0e0e0;
-    border-color: #333;
-}
-
-body.dark-mode .form-control:focus {
-    background-color: #16213e;
-    color: #e0e0e0;
-}
-
 body.dark-mode footer {
     background-color: #0a0a1a !important;
 }
@@ -71,11 +69,7 @@ body.dark-mode .navbar.bg-dark {
     background-color: #0a0a1a !important;
 }
 
-body.dark-mode .text-muted {
-    color: #aaa !important;
-}
-
-/*more styles */
+/* Custom button styling */
 .btn-warning {
     background-color: #e6a756;
     border-color: #e6a756;
@@ -88,6 +82,7 @@ body.dark-mode .text-muted {
     color: #1a1a2e;
 }
 
+/* Shadow effects for cards */
 .shadow-sm {
     box-shadow: 0 4px 12px rgba(0,0,0,0.08) !important;
 }
@@ -97,20 +92,12 @@ body.dark-mode .text-muted {
     transition: box-shadow 0.3s ease;
 }
 
+/* Image styling */
 img.rounded {
     border-radius: 12px !important;
 }
 
-.card {
-    border-radius: 12px !important;
-    overflow: hidden;
-}
-
-footer {
-    margin-top: 0;
-}
-
-/* Page title headings */
+/* Page title with underline effect */
 .page-title {
     font-weight: 700;
     letter-spacing: -0.5px;
@@ -130,14 +117,7 @@ footer {
     border-radius: 2px;
 }
 
-/* Section headings */
-.section-heading {
-    font-weight: 600;
-    letter-spacing: -0.3px;
-    color: #2d2d2d;
-}
-
-/* Lead text */
+/* Lead text styling */
 .lead-text {
     font-size: 1.2rem;
     color: #6c757d;
@@ -146,7 +126,7 @@ footer {
     margin-right: auto;
 }
 
-/* Badge container */
+/* Badge container for headings */
 .heading-badges {
     margin-top: 1rem;
     display: flex;
@@ -164,7 +144,7 @@ footer {
     color: #fff;
 }
 
-/* Hero headings */
+/* Hero section titles */
 .hero-title {
     font-size: 4rem;
     font-weight: 800;
@@ -178,44 +158,7 @@ footer {
     opacity: 0.95;
 }
 
-/* Dark mode heading fixes */
-body.dark-mode .section-heading {
-    color: #e0e0e0;
-}
-
-body.dark-mode .lead-text {
-    color: #aaa;
-}
-
-body.dark-mode .page-title:after {
-    background: #e6a756;
-}
-
-body.dark-mode .heading-badges .badge {
-    background-color: #16213e;
-    color: #e0e0e0;
-    border: 1px solid #333;
-}
-
-/* Responsive heading sizes */
-@media (max-width: 768px) {
-    .hero-title {
-        font-size: 2.5rem;
-    }
-    
-    .hero-subtitle {
-        font-size: 1.1rem;
-    }
-    
-    .page-title {
-        font-size: 2.2rem;
-    }
-    
-    .section-heading {
-        font-size: 1.6rem;
-    }
-}
-/* back to top button */
+/* Back to top button that is hidden by default, appears on scroll */
 #backToTop {
     position: fixed;
     bottom: 30px;
@@ -247,37 +190,4 @@ body.dark-mode #backToTop {
 
 body.dark-mode #backToTop:hover {
     background-color: #1a4a7a;
-}
-/* dark mode for FAQ */
-body.dark-mode .accordion-item {
-    background-color: #1a1a2e !important;
-    border-color: #333 !important;
-}
-
-body.dark-mode .accordion-header {
-    background-color: #1a1a2e !important;
-}
-
-body.dark-mode .accordion-button {
-    background-color: #16213e !important;
-    color: #e0e0e0 !important;
-    border-color: #333 !important;
-}
-
-body.dark-mode .accordion-button:not(.collapsed) {
-    background-color: #0f3460 !important;
-    color: #e0e0e0 !important;
-}
-
-body.dark-mode .accordion-button:focus {
-    box-shadow: none !important;
-}
-
-body.dark-mode .accordion-body {
-    background-color: #1a1a2e !important;
-    color: #ccc !important;
-}
-
-body.dark-mode .accordion-button::after {
-    filter: invert(1) !important;
 }
