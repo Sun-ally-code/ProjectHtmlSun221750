@@ -2,17 +2,18 @@
 
 ## Project Overview
 
-A fully responsive, multi-page web application for Coffee Heaven, a café based in Lavington, Nairobi. The website showcases the café's brand, menu, gallery, events, and contact information.
+A fully responsive, multi-page web application for Coffee Heaven, a cafe based in Lavington, Nairobi. The website showcases the cafe's brand, menu, gallery, events, contact information, and table booking system.
 
-## Pages Included
+## Pages Included (8 Pages)
 
-- **Home** – Hero section with key features (organic beans, pastries, free Wi-Fi)
-- **About** – Our story and café atmosphere
-- **Menu** – Espresso drinks and pastries with KES prices
-- **Gallery** – Coffee-related photos with descriptions
-- **Contact** – Contact form with validation (name, email, message)
-- **FAQ** – Frequently asked questions with accordion design
-- **Events** – Upcoming events and workshops
+Home - Hero section with key features (organic beans, pastries, free Wi-Fi) and Book a Table button
+About - Our story, café atmosphere, bean-to-cup process, and what makes us different
+Menu - Espresso drinks, non-espresso drinks, pastries, and desserts with images and KES prices
+Gallery - Coffee-related photos with descriptions and stories
+Contact - Contact form with validation, location info, opening hours, social media icons
+FAQ - 14 frequently asked questions with accordion design
+Events - Upcoming events including live jazz, workshops, art exhibitions, and poetry nights
+Booking - Table reservation form with validation for name, email, phone, guests, date, and time
 
 ## Technologies Used
 
@@ -25,25 +26,34 @@ A fully responsive, multi-page web application for Coffee Heaven, a café based 
 
 ## Features
 
-- Fully responsive design (desktop, tablet, mobile)
-- Dark/light mode toggle with local storage
-- Contact form validation (name, email, message)
-- Interactive accordion FAQ section
-- Back to Top button with smooth scrolling
-- Consistent navigation across all pages
-- ARIA labels for accessibility
+- ✅ Fully responsive design (desktop, tablet, mobile)
+- ✅ Dark/Light mode toggle with local storage persistence
+- ✅ Contact form validation (name, email, subject, message, terms)
+- ✅ Table booking form validation (name, email, phone, guests, date, time)
+- ✅ Interactive accordion FAQ section (14 questions)
+- ✅ Back to Top button with smooth scrolling
+- ✅ Consistent navigation across all pages
+- ✅ ARIA labels for accessibility
+- ✅ Open Graph meta tags for social sharing
+- ✅ Lazy loading on images for performance
+- ✅ Hero background images on all pages
+- ✅ Social media icons in footer
 
-## How to Run
+## Page Highlights
 
-1. Clone the repository
-2. Open any `.html` file in a browser
-3. For best experience, use Live Server in VS Code
+- **Homepage:** Two call-to-action buttons (View Our Menu + Book a Table)
+- **Menu:** Card-style layout with food images for each item
+- **Contact:** Side-by-side layout with contact info box, opening hours, and inquiries section
+- **FAQ:** Expanded to 14 questions covering payments, parking, pets, loyalty, and more
+- **Booking:** Dedicated table reservation page with full validation
 
 ## Author
 
 Sarah Ndanu Sun
 221750 - Web Application Development Project
 
-## Submission Date
+## Commit History
 
-28 June 2026
+- Total commits: 42
+- First commit: 15 June 2026
+- Final commit: 28 June 2026
