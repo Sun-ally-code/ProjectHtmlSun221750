@@ -4,156 +4,275 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coffee Heaven | Menu</title>
-    <meta property="og:title" content="Coffee Heaven - Best Coffee in Nairobi">
-    <meta property="og:description" content="Fresh coffee, homemade pastries, and a cozy atmosphere in Lavington, Nairobi.">
-    <meta property="og:image" content="https://images.pexels.com/photos/312418/pexels-photo-312418.jpeg?auto=compress&cs=tinysrgb&w=800">
-    <meta property="og:url" content="https://yourusername.github.io/cafe-website/">
-    <meta property="og:type" content="website">
-    <meta name="twitter:card" content="summary_large_image">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="icon" href="https://img.icons8.com/emoji/48/000000/hot-beverage-emoji.png" type="image/png">
 </head>
 <body>
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
         <div class="container">
-            <a class="navbar-brand fw-bold" href="index.html"> Coffee Heaven</a>
+            <a class="navbar-brand fw-bold" href="index.html">☕ Coffee Heaven</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navMenu">
                 <ul class="navbar-nav ms-auto align-items-lg-center">
-                    <li class="nav-item"><a class="nav-link" href="index.html" aria-label="Go to homepage">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="about.html" aria-label="Learn more about us">About</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="menu.html" aria-label="View our menu">Menu</a></li>
-                    <li class="nav-item"><a class="nav-link" href="gallery.html" aria-label="View our gallery">Gallery</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contacts.html" aria-label="Contact us">Contact</a></li>
-                    <li class="nav-item"><a class="nav-link" href="faq.html" aria-label="View frequently asked questions">FAQ</a></li>
-                    <li class="nav-item"><a class="nav-link" href="events.html" aria-label="View our events">Events</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="menu.html">Menu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacts.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="events.html">Events</a></li>
                     <li class="nav-item">
-                        <button id="darkModeToggle" class="btn btn-outline-light btn-sm ms-2" aria-label="Toggle dark mode">🌙 Dark</button>
+                        <button id="darkModeToggle" class="btn btn-outline-light btn-sm ms-2">🌙 Dark</button>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
+    <!-- Page Header -->
     <section class="py-5 bg-light">
         <div class="container text-center">
-           <section class="py-5 bg-light">
-    <div class="container text-center">
-        <h1 class="page-title">Our Menu</h1>
-        <p class="lead-text">All prices in Kenyan Shillings (KES) • Taxes included</p>
-        <div class="heading-badges">
-            <span class="badge">Espresso</span>
-            <span class="badge">Pastries</span>
-        </div>
-    </div>
-</section>
+            <h1 class="page-title">☕ Our Menu</h1>
+            <p class="lead-text">All prices in Kenyan Shillings (KES) • Taxes included</p>
+            <div class="heading-badges">
+                <span class="badge">☕ Espresso</span>
+                <span class="badge">🥐 Pastries</span>
+            </div>
         </div>
     </section>
 
-    <section class="py-4">
+    <!-- Espresso Drinks Section -->
+    <section class="py-5">
         <div class="container">
-            <h2 class="text-center mb-4">Espresso Drinks</h2>
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="d-flex justify-content-between border-bottom py-2">
-                        <span><strong>Espresso (Single)</strong><br><small class="text-muted">Straight shot, bold and smooth</small></span>
-                        <span class="fw-bold">KES 180</span>
-                    </div>
-                    <div class="d-flex justify-content-between border-bottom py-2">
-                        <span><strong>Double Espresso</strong><br><small class="text-muted">Double the kick</small></span>
-                        <span class="fw-bold">KES 280</span>
-                    </div>
-                    <div class="d-flex justify-content-between border-bottom py-2">
-                        <span><strong>Americano</strong><br><small class="text-muted">Espresso with hot water</small></span>
-                        <span class="fw-bold">KES 220</span>
-                    </div>
-                    <div class="d-flex justify-content-between border-bottom py-2">
-                        <span><strong>Latte</strong><br><small class="text-muted">Espresso with steamed milk</small></span>
-                        <span class="fw-bold">KES 320</span>
+            <h2 class="text-center mb-4 section-heading">☕ Espresso Drinks</h2>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIJVsbFvPqR1SdiZ8Q2AsqkwzjF3tfWg0cmtYfG-JpnQ&s=10" class="card-img-top" alt="Espresso" style="height: 200px; object-fit: cover;" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Espresso (Single)</h5>
+                            <p class="card-text text-muted small">Straight shot, bold and smooth</p>
+                            <p class="card-text fw-bold text-warning">KES 180</p>
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-6">
-                    <div class="d-flex justify-content-between border-bottom py-2">
-                        <span><strong>Cappuccino</strong><br><small class="text-muted">Equal parts espresso, milk, foam</small></span>
-                        <span class="fw-bold">KES 320</span>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIWY8A-K5--qSmrSpnwX9Mwi8MacZi6JaECa9FkDDcOQ&s=10" class="card-img-top" alt="Double Espresso" style="height: 200px; object-fit: cover;" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Double Espresso</h5>
+                            <p class="card-text text-muted small">Double the kick</p>
+                            <p class="card-text fw-bold text-warning">KES 280</p>
+                        </div>
                     </div>
-                    <div class="d-flex justify-content-between border-bottom py-2">
-                        <span><strong>Flat White</strong><br><small class="text-muted">Smoother latte with less foam</small></span>
-                        <span class="fw-bold">KES 340</span>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmkkXsrVqRu40WBZ62zmAwcmm_LGw8fjF5EKbOlhG3JQ&s=10" class="card-img-top" alt="Americano" style="height: 200px; object-fit: cover;" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Americano</h5>
+                            <p class="card-text text-muted small">Espresso with hot water</p>
+                            <p class="card-text fw-bold text-warning">KES 220</p>
+                        </div>
                     </div>
-                    <div class="d-flex justify-content-between border-bottom py-2">
-                        <span><strong>Mocha</strong><br><small class="text-muted">Espresso, chocolate, steamed milk</small></span>
-                        <span class="fw-bold">KES 380</span>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0Bovdxa5SNtOra9rBZGirhgUbcOAps_5PqBF7ibr5BQ&s" class="card-img-top" alt="Latte" style="height: 200px; object-fit: cover;" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Latte</h5>
+                            <p class="card-text text-muted small">Espresso with steamed milk</p>
+                            <p class="card-text fw-bold text-warning">KES 320</p>
+                        </div>
                     </div>
-                    <div class="d-flex justify-content-between border-bottom py-2">
-                        <span><strong>Macchiato</strong><br><small class="text-muted">Espresso with a dollop of foam</small></span>
-                        <span class="fw-bold">KES 250</span>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfXgscfmAgVZdy6_OveIpriTuCUZfCEEs0CaKy5Ixl4Q&s=10" class="card-img-top" alt="Cappuccino" style="height: 200px; object-fit: cover;" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Cappuccino</h5>
+                            <p class="card-text text-muted small">Equal parts espresso, milk, foam</p>
+                            <p class="card-text fw-bold text-warning">KES 320</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpjNNzBTIxr9mvGs_7yFQjkWK85lQsydDZYLn2QILmqg&s=10" class="card-img-top" alt="Mocha" style="height: 200px; object-fit: cover;" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Mocha</h5>
+                            <p class="card-text text-muted small">Espresso, chocolate, steamed milk</p>
+                            <p class="card-text fw-bold text-warning">KES 380</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="py-4 bg-light">
+    <!-- Pastries Section -->
+    <section class="py-5 bg-light">
         <div class="container">
-            <h2 class="text-center mb-4">Pastries & Food</h2>
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="d-flex justify-content-between border-bottom py-2">
-                        <span><strong>Butter Croissant</strong><br><small class="text-muted">Flaky, buttery, baked fresh</small></span>
-                        <span class="fw-bold">KES 220</span>
-                    </div>
-                    <div class="d-flex justify-content-between border-bottom py-2">
-                        <span><strong>Chocolate Croissant</strong><br><small class="text-muted">Dark chocolate filling</small></span>
-                        <span class="fw-bold">KES 260</span>
-                    </div>
-                    <div class="d-flex justify-content-between border-bottom py-2">
-                        <span><strong>Cinnamon Roll</strong><br><small class="text-muted">With cream cheese glaze</small></span>
-                        <span class="fw-bold">KES 250</span>
+            <h2 class="text-center mb-4 section-heading">🥐 Pastries & Food</h2>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSd0GpCdyROuC-Hol9ufCTurumBzU184K0MX8gggjYuDQ&s=10" class="card-img-top" alt="Butter Croissant" style="height: 200px; object-fit: cover;" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Butter Croissant</h5>
+                            <p class="card-text text-muted small">Flaky, buttery, baked fresh</p>
+                            <p class="card-text fw-bold text-warning">KES 220</p>
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-6">
-                    <div class="d-flex justify-content-between border-bottom py-2">
-                        <span><strong>Blueberry Muffin</strong><br><small class="text-muted">Fresh blueberries</small></span>
-                        <span class="fw-bold">KES 240</span>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRB-XTl0Vmy-u0vMOIRqYNT4FkOMo2BKKy1DDjkK66fHA&s=10" class="card-img-top" alt="Chocolate Croissant" style="height: 200px; object-fit: cover;" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Chocolate Croissant</h5>
+                            <p class="card-text text-muted small">Dark chocolate filling</p>
+                            <p class="card-text fw-bold text-warning">KES 260</p>
+                        </div>
                     </div>
-                    <div class="d-flex justify-content-between border-bottom py-2">
-                        <span><strong>Banana Bread Slice</strong><br><small class="text-muted">Walnuts optional</small></span>
-                        <span class="fw-bold">KES 230</span>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRT8Wtq1eahPVirv-3IdH-Ol_U6nMs4iPgcKTUW7u4efQ&s=10" class="card-img-top" alt="Cinnamon Roll" style="height: 200px; object-fit: cover;" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Cinnamon Roll</h5>
+                            <p class="card-text text-muted small">With cream cheese glaze</p>
+                            <p class="card-text fw-bold text-warning">KES 250</p>
+                        </div>
                     </div>
-                    <div class="d-flex justify-content-between border-bottom py-2">
-                        <span><strong>Ham & Cheese Sandwich</strong><br><small class="text-muted">Grilled or fresh</small></span>
-                        <span class="fw-bold">KES 450</span>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFMEOPvwm_tEaW8MwG_ogKvYSHzlqzuUDJXq00kEdmVA&s=10" class="card-img-top" alt="Blueberry Muffin" style="height: 200px; object-fit: cover;" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Blueberry Muffin</h5>
+                            <p class="card-text text-muted small">Fresh blueberries</p>
+                            <p class="card-text fw-bold text-warning">KES 240</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAmPVrdJF5SKL6dbZocRmzKRPvMxS2Q1gQ2Dr4vT1edA&s=10" class="card-img-top" alt="Banana Bread" style="height: 200px; object-fit: cover;" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Banana Bread Slice</h5>
+                            <p class="card-text text-muted small">Walnuts optional</p>
+                            <p class="card-text fw-bold text-warning">KES 230</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDJpDGZDersSq9P8qloDzvmMZPyRX_hfFXfFwkzDVraA&s=10" class="card-img-top" alt="Ham and Cheese Sandwich" style="height: 200px; object-fit: cover;" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Ham & Cheese Sandwich</h5>
+                            <p class="card-text text-muted small">Grilled or fresh</p>
+                            <p class="card-text fw-bold text-warning">KES 450</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
+
+        <!-- Desserts Section -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4 section-heading">🍰 Desserts</h2>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXK5KK4n__ZohvKsG0uy10UQA27_khnjjgKzm8oI84DQ&s=10" class="card-img-top" alt="Chocolate Cake" style="height: 200px; object-fit: cover;" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Chocolate Cake</h5>
+                            <p class="card-text text-muted small">Rich chocolate layered cake</p>
+                            <p class="card-text fw-bold text-warning">KES 350</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0p7vstValaPy9eymnsB5YVrS9MQXf7rwWhatBqOQF4w&s=10" class="card-img-top" alt="Cheesecake" style="height: 200px; object-fit: cover;" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Cheesecake</h5>
+                            <p class="card-text text-muted small">Creamy cheesecake with berry topping</p>
+                            <p class="card-text fw-bold text-warning">KES 380</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjBZTq5-99CK74Stzdl5GG5-22PshQDlHU8vgCqqNTGg&s=10" class="card-img-top" alt="Apple Pie" style="height: 200px; object-fit: cover;" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Apple Pie</h5>
+                            <p class="card-text text-muted small">Classic apple pie with cinnamon</p>
+                            <p class="card-text fw-bold text-warning">KES 300</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoj0djvFl_5wvaGOxSzcXIzWn4Aw9sP4UYY-TsrYWvuQ&s=10" class="card-img-top" alt="Brownie" style="height: 200px; object-fit: cover;" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Fudge Brownie</h5>
+                            <p class="card-text text-muted small">Warm brownie with vanilla ice cream</p>
+                            <p class="card-text fw-bold text-warning">KES 280</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsEU2vle4WrqltBOlVpILfPPzxjRoQ5GRAUVK-P5fFVw&s=10" class="card-img-top" alt="Fruit Tart" style="height: 200px; object-fit: cover;" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Fruit Tart</h5>
+                            <p class="card-text text-muted small">Fresh fruit custard tart</p>
+                            <p class="card-text fw-bold text-warning">KES 320</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHPCC9DOwgCKigv7XPStVFS8cJOBHyg-IT1BVI0GDCvQ&s=10" class="card-img-top" alt="Ice Cream" style="height: 200px; object-fit: cover;" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Ice Cream Sundae</h5>
+                            <p class="card-text text-muted small">Vanilla ice cream with chocolate sauce</p>
+                            <p class="card-text fw-bold text-warning">KES 250</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
     <footer class="bg-dark text-white text-center py-4">
-    <div class="container">
-        <p class="mb-2">
-            📍 Lavington, Nairobi | 
-            📞 <a href="tel:+254722867537" class="text-white text-decoration-none" >(+254) 722 867 537</a> | 
-            ✉️ <a href="mailto:coffeeheaven@gmail.com" class="text-white text-decoration-none">coffeeheaven@gmail.com</a>
-        </p>
-        <div class="mb-2">
-            <a href="#" class="text-white mx-2 fs-5" aria-label="Follow us on Facebook"><i class="fab fa-facebook"></i></a>
-            <a href="#" class="text-white mx-2 fs-5" aria-label="Follow us on Instagram"><i class="fab fa-instagram"></i></a>
-            <a href="#" class="text-white mx-2 fs-5" aria-label="Follow us on Twitter"><i class="fab fa-twitter"></i></a>
-            <a href="#" class="text-white mx-2 fs-5" aria-label="Follow us on TikTok"><i class="fab fa-tiktok"></i></a>
+        <div class="container">
+            <p class="mb-2">
+                📍 Lavington, Nairobi |
+                📞 <a href="tel:+254722867537" class="text-white text-decoration-none">(+254) 722 867 537</a> |
+                ✉️ <a href="mailto:coffeeheaven@gmail.com" class="text-white text-decoration-none">coffeeheaven@gmail.com</a>
+            </p>
+            <div class="mb-2">
+                <a href="#" class="text-white mx-2 fs-5" aria-label="Follow us on Facebook"><i class="fab fa-facebook"></i></a>
+                <a href="#" class="text-white mx-2 fs-5" aria-label="Follow us on Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="text-white mx-2 fs-5" aria-label="Follow us on Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="text-white mx-2 fs-5" aria-label="Follow us on TikTok"><i class="fab fa-tiktok"></i></a>
+            </div>
+            <p class="mb-0 small">© <span id="currentYear"></span> Coffee Heaven – All rights reserved</p>
         </div>
-        <p class="mb-0 small">© <span id="currentYear"></span> Coffee Heaven – All rights reserved</p>
-    </div>
-</footer>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/script.js"></script>
-    <button id="backToTop" title="Back to Top" aria-label="Scroll back to the top of the page">⬆</button>
+    <button id="backToTop" title="Back to Top">⬆</button>
 </body>
 </html>
