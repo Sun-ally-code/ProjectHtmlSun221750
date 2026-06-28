@@ -1,8 +1,4 @@
-# ProjectHtmlSun221750
-
-The assignment project given on 15th June 2026
-
-# Coffee Heaven - Café Website
+# Coffee Heaven - Cafe Website
 
 ## Project Overview
 
@@ -10,12 +6,12 @@ A fully responsive, multi-page web application for Coffee Heaven, a café based 
 
 ## Pages Included
 
-- **Home** – Introduction, hero section, and key features
+- **Home** – Hero section with key features (organic beans, pastries, free Wi-Fi)
 - **About** – Our story and café atmosphere
 - **Menu** – Espresso drinks and pastries with KES prices
-- **Gallery** – Coffee-related photos
-- **Contact** – Contact form with validation
-- **FAQ** – Frequently asked questions (accordion style)
+- **Gallery** – Coffee-related photos with descriptions
+- **Contact** – Contact form with validation (name, email, message)
+- **FAQ** – Frequently asked questions with accordion design
 - **Events** – Upcoming events and workshops
 
 ## Technologies Used
@@ -24,15 +20,18 @@ A fully responsive, multi-page web application for Coffee Heaven, a café based 
 - CSS3
 - JavaScript (ES6+)
 - Bootstrap 5
-- Git and GitHub
+- Font Awesome (social icons)
+- Git & GitHub
 
 ## Features
 
 - Fully responsive design (desktop, tablet, mobile)
-- Dark/light mode toggle with local storage persistence
+- Dark/light mode toggle with local storage
 - Contact form validation (name, email, message)
 - Interactive accordion FAQ section
+- Back to Top button with smooth scrolling
 - Consistent navigation across all pages
+- ARIA labels for accessibility
 
 ## How to Run
 
@@ -43,7 +42,7 @@ A fully responsive, multi-page web application for Coffee Heaven, a café based 
 ## Author
 
 Sarah Ndanu Sun
-Strathmore University Student - Web Application Development Project
+221750 - Web Application Development Project
 
 ## Submission Date
 
